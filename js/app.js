@@ -1,24 +1,36 @@
 // 1. Har bir so‘zni katta harf bilan yozish
-function capitalizeWords(str) {
+// function capitalizeWords(str) {
   // 1. Bo‘sh joylardan bo‘lib so‘zlarga ajratamiz
   // 2. Har bir so‘zni birinchi harfini katta qilib, qolganini kichik yozamiz
   // 3. So‘zlarni yana bo‘sh joy bilan birlashtiramiz
-}
-console.log(capitalizeWords("salom dunyo")); // "Salom Dunyo"
+//   return str
+//     .split(" ")
+//     .map((word) => word.charAt(0).toUpperCase() word.slice(1).toLowerCase())
+//     .join(" ");
+// }
+// console.log(capitalizeWords("salom dunyo")); // "Salom Dunyo"
 
-// 2. Massivdagi har bir ismni katta harfga o‘tkazing
-function toUpperNames(names) {
-  // 1. map() yordamida har bir ismdan yangi massiv yaratamiz
-  // 2. Har bir ismni toUpperCase() bilan yozamiz
-}
-console.log(toUpperNames(["ali", "vali", "hasan"])); // ["ALI", "VALI", "HASAN"]
+// // 2. Massivdagi har bir ismni katta harfga o‘tkazing
+// function toUpperNames(names) {
+//   // 1. map() yordamida har bir ismdan yangi massiv yaratamiz
+//   // 2. Har bir ismni toUpperCase() bilan yozamiz
+// return names.map(names => names.toUpperCase());
+// const names = ["ali", "vali", "hasan"];
+// console.log(toUpperNames(names)); 
+// }
 
-// 3. Massivda nechta musbat son borligini toping
-function countPositive(numbers) {
-  // 1. filter() yordamida musbat sonlargina ajratib oling
-  // 2. filter() natijasining uzunligini qaytaring
-}
-console.log(countPositive([1, -3, 4, 0, 6])); // 3
+
+// // 3. Massivda nechta musbat son borligini toping
+// function countPositive(numbers) {
+//   // 1. filter() yordamida musbat sonlargina ajratib oling
+//   // 2. filter() natijasining uzunligini qaytaring
+//   return numbers.filter( () => {
+//     return numbers.startsWidth("-")
+//   })
+//   const numbers = [1,2,-3,0,12]
+//   console.log(countPositive(numbers))
+// }
+
 
 // 4. Stringdagi bo‘sh joylarni olib tashlang
 function removeSpaces(str) {
