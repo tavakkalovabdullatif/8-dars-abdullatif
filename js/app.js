@@ -32,110 +32,110 @@
 // }
 
 
-// 4. Stringdagi bo‘sh joylarni olib tashlang
-function removeSpaces(str) {
-  // 1. trim() yordamida bosh va oxiridagi bo‘sh joylarni oling
-  // 2. replaceAll() bilan oradagi bo‘sh joylarni ham olib tashlang
-}
-console.log(removeSpaces("  salom   dunyo  ")); // "salomdunyo"
+// // 4. Stringdagi bo‘sh joylarni olib tashlang
+// function removeSpaces(str) {
+//   return str.trim().replaceAll(' ', '');
+// }
+// console.log(removeSpaces("  salom   dunyo  ")); // "salomdunyo"
 
-// 5. Berilgan sonlar orasidan biror juft son bor-yo‘qligini tekshiring
-function hasEvenNumber(arr) {
-  // 1. some() yordamida bironta son juft ekanligini tekshiring
-}
-console.log(hasEvenNumber([1, 3, 5, 8])); // true
+// // 5. Berilgan sonlar orasidan biror juft son bor-yo‘qligini tekshiring
+// function hasEvenNumber(arr) {
+//   return arr.some(num => num % 2 === 0);
+// }
+// console.log(hasEvenNumber([1, 3, 5, 8])); // true
 
-// 6. Massivdagi 0 qiymatli elementlarni olib tashlang
-function removeZeros(arr) {
-  // 1. filter() yordamida faqat 0 ga teng bo‘lmagan qiymatlarni oling
-}
-console.log(removeZeros([0, 1, 2, 0, 3])); // [1, 2, 3]
+// // 6. Massivdagi 0 qiymatli elementlarni olib tashlang
+// function removeZeros(arr) {
+//   return arr.filter(num => num !== 0);
+// }
+// console.log(removeZeros([0, 1, 2, 0, 3])); // [1, 2, 3]
 
-// 7. Har bir so‘zni teskari qilib qaytaring
-function reverseWords(str) {
-  // 1. split() bilan so‘zlarga ajrating
-  // 2. map() orqali har bir so‘zni teskari qilib chiqing
-  // 3. So‘zlarni yana birlashtiring
-}
-console.log(reverseWords("salom dunyo")); // "molas oynud"
+// // 7. Har bir so‘zni teskari qilib qaytaring
+// function reverseWords(str) {
+//   return str.split(" "))
+//             .map(word => word.split('').reverse().join(''))
+//             .join(" ");
+// }
+// console.log(reverseWords("salom dunyo")); // "molas oynud"
 
-// 8. Faqat 3 harfli so‘zlarni qoldiring
-function threeLetterWords(words) {
-  // 1. filter() yordamida uzunligi 3 ga teng so‘zlarni ajrating
-}
-console.log(threeLetterWords(["sal", "olma", "ko‘r", "bor"])); // ["sal", "ko‘r", "bor"]
+// // 8. Faqat 3 harfli so‘zlarni qoldiring
+// function threeLetterWords(words) {
+//   return words.filter(word => word.length === 3);
+// }
+// console.log(threeLetterWords(["sal", "olma", "ko‘r", "bor"])); // ["sal", "ko‘r", "bor"]
 
-// 9. Massivdagi sonlarni 2 ga ko‘paytiring
-function doubleNumbers(numbers) {
-  // 1. map() yordamida har bir elementni 2 ga ko‘paytiring
-}
-console.log(doubleNumbers([1, 2, 3])); // [2, 4, 6]
+// // 9. Massivdagi sonlarni 2 ga ko‘paytiring
+// function doubleNumbers(numbers) {
+//   return numbers.map(num => num * 2);
+// }
+// console.log(doubleNumbers([1, 2, 3])); // [2, 4, 6]
 
-// 10. Matndagi har bir harfni alohida massivga oling
-function splitChars(str) {
-  // 1. split('') orqali harflarga bo‘ling
-}
-console.log(splitChars("hello")); // ['h','e','l','l','o']
+// // 10. Matndagi har bir harfni alohida massivga oling
+// function splitChars(str) {
+//   return str.split('');
+// }
+// console.log(splitChars("hello")); // ['h','e','l','l','o']
 
-// 11. Massivdagi butun sonlarni saqlang
-function onlyIntegers(arr) {
-  // 1. filter() yordamida Number.isInteger bilan tekshiring
-}
-console.log(onlyIntegers([1.5, 2, 3.1, 4])); // [2, 4]
+// // 11. Massivdagi butun sonlarni saqlang
+// function onlyIntegers(arr) {
+//   return arr.filter(Number.isInteger);
+// }
+// console.log(onlyIntegers([1.5, 2, 3.1, 4])); // [2, 4]
 
-// 12. Massivdagi har bir elementga uning indexini qo‘shing
-function addIndex(arr) {
-  // 1. map() yordamida qiymatga uning indeksini qo‘shing
-}
-console.log(addIndex([10, 20, 30])); // [10, 21, 32]
+// // 12. Massivdagi har bir elementga uning indexini qo‘shing
+// function addIndex(arr) {
+//   return arr.map((val, idx) => val + idx);
+// }
+// console.log(addIndex([10, 20, 30])); // [10, 21, 32]
 
-// 13. Stringda nechta 'a' harfi borligini sanang
-function countA(str) {
-  // 1. toLowerCase() qiling
-  // 2. split() bilan harflarga bo‘ling
-  // 3. filter() orqali faqat 'a' harflarini oling va uzunligini toping
-}
-console.log(countA("Ananas")); // 3
+// // 13. Stringda nechta 'a' harfi borligini sanang
+// function countA(str) {
+//   return str.toLowerCase()
+//             .split('')
+//             .filter(char => char === 'a')
+//             .length;
+// }
+// console.log(countA("Ananas")); // 3
 
-// 14. Har bir so‘zdan faqat birinchi harfni oling
-function getInitials(str) {
-  // 1. split() orqali so‘zlarga bo‘ling
-  // 2. map() orqali har bir so‘zdan faqat birinchi harfni oling
-  // 3. join('') bilan birlashtiring
-}
-console.log(getInitials("Hello World From JS")); // "HWFJ"
+// // 14. Har bir so‘zdan faqat birinchi harfni oling
+// function getInitials(str) {
+//   return str.split(' ')
+//             .map(word => word[0])
+//             .join('');
+// }
+// console.log(getInitials("Hello World From JS")); // "HWFJ"
 
-// 15. Ichma-ich massivlarni tekislashtiring
-function flattenArray(arr) {
-  // 1. flat() metodidan foydalaning
-}
-console.log(flattenArray([1, [2, 3], [4, 5]])); // [1,2,3,4,5]
+// // 15. Ichma-ich massivlarni tekislashtiring
+// function flattenArray(arr) {
+//   return arr.flat();
+// }
+// console.log(flattenArray([1, [2, 3], [4, 5]])); // [1,2,3,4,5]
 
-// 17. Stringdagi raqamlarni sonlarga aylantiring
-function extractNumbers(str) {
-  // 1. split('') bilan harflarga bo‘ling
-  // 2. filter() bilan faqat raqamlar ajrating
-  // 3. map() bilan ularni Number ga aylantiring
-}
-console.log(extractNumbers("ab1c3d2")); // [1,3,2]
+// // 17. Stringdagi raqamlarni sonlarga aylantiring
+// function extractNumbers(str) {
+//   return str.split('')
+//             .filter(char => !isNaN(char) && char !== ' ')
+//             .map(Number);
+// }
+// console.log(extractNumbers("ab1c3d2")); // [1,3,2]
 
-// 18. Har bir so‘zni teskari qilib, oxirgi so‘zni katta harf bilan qaytaring
-function specialReverse(str) {
-  // 1. split() orqali so‘zlarga bo‘ling
-  // 2. map() orqali har birini teskari qiling
-  // 3. oxirgi so‘zni toUpperCase() qiling
-}
-console.log(specialReverse("salom dunyo js")); // ['molas', 'oynud', 'SJ']
+// // 18. Har bir so‘zni teskari qilib, oxirgi so‘zni katta harf bilan qaytaring
+// function specialReverse(str) {
+//   let words = str.split(' ')
+//                  .map(word => word.split('').reverse().join(''));
+//   words[words.length - 1] = words[words.length - 1].toUpperCase();
+//   return words;
+// }
+// console.log(specialReverse("salom dunyo js")); // ['molas', 'oynud', 'SJ']
 
-// 19. 2-qavatgacha bo‘lgan ichki massivlarni flatten qiling (flatMap bilan)
-function flatMapExample(arr) {
-  // 1. flatMap() yordamida birinchi qatlamni yoying
-  // 2. Ichidagi yana bitta massiv bo‘lsa, uni ham yoying
-}
-console.log(flatMapExample([1, [2, [3, 4]], 5])); // [1,2,[3,4],5]
+// // 19. 2-qavatgacha bo‘lgan ichki massivlarni flatten qiling (flatMap bilan)
+// function flatMapExample(arr) {
+//   return arr.flatMap(item => Array.isArray(item) ? item : [item]);
+// }
+// console.log(flatMapExample([1, [2, [3, 4]], 5])); // [1,2,[3,4],5]
 
-// 20. Massivda barcha qiymatlar son ekanligini tekshiring
-function allNumbers(arr) {
-  // 1. every() yordamida typeof qiymat 'number' ekanligini tekshiring
-}
-console.log(allNumbers([1, 2, 3])); // true
+// // 20. Massivda barcha qiymatlar son ekanligini tekshiring
+// function allNumbers(arr) {
+//   return arr.every(item => typeof item === 'number');
+// }
+// console.log(allNumbers([1, 2, 3])); // true
